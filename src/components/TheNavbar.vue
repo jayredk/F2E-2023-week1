@@ -23,11 +23,10 @@ const closeCanvas = () => offcanvas.value.hide();
       <div class="container">
         <a class="navbar-brand" href="#">
           <ImageHeaderNumber
-            class="me-2 me-md-3"
-            fill="#4527A0"
+            class="me-2 me-md-3 fill-primary"
           />
           <ImageHeaderText
-            fill="#4527A0"
+            class="fill-primary"
           />
         </a>
         <button
@@ -41,16 +40,15 @@ const closeCanvas = () => offcanvas.value.hide();
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasLabel">
               <ImageHeaderNumber
-                class="me-2 me-md-3"
-                fill="#fff"
+                class="me-2 me-md-3 fill-white"
               />
-              <ImageHeaderText fill="#fff" />
+              <ImageHeaderText class="fill-white" />
             </h5>
             <button
               @click="closeCanvas"
               type="button"
-              class="w-auto h-auto boder-0 .bg-transparent"  aria-label="Close">
-              <IconClose fill="#FAFAFA"/>
+              class="w-auto h-auto border-0 bg-transparent"  aria-label="Close">
+              <IconClose class="fill-white"/>
             </button>
           </div>
           <div class="offcanvas-body">
@@ -68,7 +66,7 @@ const closeCanvas = () => offcanvas.value.hide();
                 <a class="nav-link px-0" href="#">民眾服務信箱</a>
               </li>
               <li class="btn btn-white bg-white d-flex align-items-center px-5 py-2 rounded-pill">
-                <IconCoin class="me-2" fill="#4527A0" />
+                <IconCoin class="me-2 fill-primary" />
                 <a class="fs-5 fw-bolder text-primary text-decoration-none" href="#">小額捐款</a>
               </li>
             </ul>
@@ -89,7 +87,7 @@ const closeCanvas = () => offcanvas.value.hide();
               <a class="nav-link px-0" href="#">民眾服務信箱</a>
             </li>
             <li class="btn btn-primary d-flex align-items-center px-5 py-2 rounded-pill">
-              <IconCoin class="me-2" fill="#FAFAFA" />
+              <IconCoin class="me-2 fill-white" />
               <a class="fs-5 fw-bolder text-white text-decoration-none" href="#">小額捐款</a>
             </li>
           </ul>
@@ -108,5 +106,12 @@ const closeCanvas = () => offcanvas.value.hide();
       border: 0px solid var(--bs-primary);
       border-bottom-width: 3px;
     }
+  }
+
+  .fill-primary {
+    fill: var(--bs-primary);
+  }
+  .fill-white {
+    fill: #FAFAFA;
   }
 </style>

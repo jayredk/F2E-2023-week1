@@ -18,10 +18,11 @@ const closeCanvas = () => offcanvas.value.hide();
 </script>
 
 <template>
-  <header class="position-fixed w-100 bg-white shadow-sm">
-    <nav class="navbar navbar-expand-lg">
+  <header class="menu position-fixed z-3 top-0 bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg py-4">
       <div class="container">
         <a class="navbar-brand" href="#">
+          <h1 class="d-none">立法委員喵立翰 競選官方網站</h1>
           <ImageHeaderNumber
             class="me-2 me-md-3 fill-primary"
           />
@@ -74,16 +75,16 @@ const closeCanvas = () => offcanvas.value.hide();
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black fs-5 fw-bolder">
-            <li class="me-3 me-xl-9">
+            <li class="me-3 me-xl-10">
               <a class="nav-link px-0 active" aria-current="page" href="#">候選人主張</a>
             </li>
-            <li class="me-3 me-xl-9">
+            <li class="me-3 me-xl-10">
               <a class="nav-link px-0" href="#">最新活動</a>
             </li>
-            <li class="me-3 me-xl-9">
+            <li class="me-3 me-xl-10">
               <a class="nav-link px-0" aria-current="page" href="#">政策議題</a>
             </li>
-            <li class="me-3 me-xl-9">
+            <li class="me-3 me-xl-10">
               <a class="nav-link px-0" href="#">民眾服務信箱</a>
             </li>
             <li class="btn btn-primary d-flex align-items-center px-5 py-2 rounded-pill">
@@ -99,6 +100,12 @@ const closeCanvas = () => offcanvas.value.hide();
 </template>
 
 <style lang="scss" scoped>
+  .menu {
+    border: 5px solid var(--bs-primary);
+    width: 100%;
+    left: 0;
+    border-bottom: 0;
+  }
   .nav-link {
     &.active,
     &.show {

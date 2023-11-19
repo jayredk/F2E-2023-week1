@@ -6,6 +6,7 @@ import svgLoader from 'vite-svg-loader'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/F2E-2023-week1/',
   plugins: [
     vue(), svgLoader()
   ],

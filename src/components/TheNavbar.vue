@@ -35,7 +35,7 @@ const closeCanvas = () => offcanvas.value.hide();
           class="navbar-toggler border-0"
           type="button"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="../assets/images/menu-toggler.svg" alt="toggler">
+          <img src="@/assets/images/menu-toggler.svg" alt="toggler">
         </button>
         <div class="offcanvas offcanvas-end w-100 d-lg-none  bg-primary text-white" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
           <div class="offcanvas-header">

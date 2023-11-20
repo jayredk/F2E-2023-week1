@@ -7,11 +7,12 @@ import Arrow from '@/assets/images/arrow.svg';
 import Slogan from '@/assets/images/slogan.svg';
 import LatestCampaign from '@/assets/images/latest-campaign.svg';
 import Polygon from '@/assets/images/polygon.svg';
+import Issue from '@/assets/images/issue.svg';
 
 </script>
 
 <template>
-  <main class="bg-gray pb-10">
+  <main class="bg-gray">
     <section class="container pt-100 mb-10">
       <div class="d-flex justify-content-between align-items-end pt-8 mb-8">
         <div class="d-flex flex-column">
@@ -36,7 +37,8 @@ import Polygon from '@/assets/images/polygon.svg';
         <img class="candidate" src="../assets/images/candidate.webp" alt="candidate">
       </div>
     </section>
-    <section class="text-center">
+
+    <section class="text-center pb-10">
       <LatestCampaign class="mb-8" />
       <div class="container">
         <div class="row gx-8">
@@ -46,7 +48,8 @@ import Polygon from '@/assets/images/polygon.svg';
                 <img
                   class="img-fluid w-100 rounded-top-3"
                   src="@/assets/images/campaign-1-sm.webp"
-                  alt="campaign-1">
+                  alt="campaign-1"
+                >
                 <Polygon class="position-absolute bottom-0 start-50 translate-middle-x" />
                 <div class="position-absolute top-0 end-0 d-flex flex-column justify-content-center align-items-center px-3 py-2 bg-secondary text-white rounded-top-3 rounded-start-0">
                   <span class="fs-2 fw-bolder lh-1 mb-1">26</span>
@@ -65,9 +68,10 @@ import Polygon from '@/assets/images/polygon.svg';
                 <div class="row g-0 h-100">
                   <div class="col-lg-4">
                     <img
-                      class="card-img-start h-100 img-fluid rounded-start-3"
+                      class="card-img-start h-100 img-fluid object-fit-cover rounded-start-3"
                       src="@/assets/images/campaign-2-sm.webp"
-                      alt="campaign-2">
+                      alt="campaign-2"
+                    >
                   </div>
                   <div class="col-lg-8">
                     <div class="card-body pt-6 text-start">
@@ -83,9 +87,10 @@ import Polygon from '@/assets/images/polygon.svg';
                 <div class="row g-0 h-100">
                   <div class="col-lg-4">
                     <img
-                      class="card-img-start h-100 img-fluid rounded-start-3"
+                      class="card-img-start h-100 img-fluid object-fit-cover rounded-start-3"
                       src="@/assets/images/campaign-3-sm.webp"
-                      alt="campaign-3">
+                      alt="campaign-3"
+                    >
                   </div>
                   <div class="col-lg-8">
                     <div class="card-body pt-6 text-start">
@@ -102,11 +107,93 @@ import Polygon from '@/assets/images/polygon.svg';
         </div>
       </div>
     </section>
+
+    <section class="bg-primary pt-7 pb-10">
+      <div class="container">
+        <div class="text-center mb-7">
+          <Issue />
+        </div>
+        <ul class="row list-unstyled">
+          <li class="col-lg-4">
+            <div class="card h-100 border-0">
+              <div class="card-body pt-6 pb-10 text-start">
+              <span class="px-3 py-2 bg-secondary text-white fw-medium"
+              style="border-radius: 0.5rem 0rem; ">政策一</span>
+              <h4 class="card-title mt-6 mb-3">為毛孩子謀福利！推動寵物醫療保障方案</h4>
+              <ol class="ps-4">
+                <li>
+                  <p class="card-text">
+                    設立寵物醫療基金：每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用
+                  </p>
+                </li>
+                <li>
+                  <p class="card-text">
+                    提供醫療補助：每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力
+                  </p>
+                </li>
+                <li>
+                  <p class="card-text">
+                    合作動物醫院：目前已有和超過 200 家動物醫院進行初步的合作討論
+                  </p>
+                </li>
+              </ol>
+            </div>
+            </div>
+          </li>
+          <li class="col-lg-4">
+            <div class="card mt-8 h-100 border-0">
+              <div class="card-body pt-6 pb-10 text-start">
+              <span class="px-3 py-2 bg-secondary text-white fw-medium"
+              style="border-radius: 0.5rem 0rem; ">政策二</span>
+              <h4 class="card-title mt-6 mb-3">打造休閒天堂！推廣寵物休閒與娛樂場所</h4>
+              <ol class="ps-4">
+                <li>
+                  <p class="card-text">
+                    建立寵物公園：每年撥款新台幣 5 億元，用於在各大都市建立專屬的寵物公園。根據初步規劃，預計在第一年內，將在全國範圍內建立至少 10 座寵物公園
+                  </p>
+                </li>
+                <li>
+                  <p class="card-text">
+                    推廣寵物友善商家：鼓勵商家提供寵物友善的環境，並為參與的商家提供稅收優惠。預計在政策實施後的首年，將有超過 500 家商家加入此計畫舉辦寵物活動和工作坊：與各大寵物社團和組織合作，每年舉辦至少 5 場大型的寵物活動，包括寵物才藝比賽、飼養知識工作坊等
+                  </p>
+                </li>
+              </ol>
+            </div>
+            </div>
+          </li>
+          <li class="col-lg-4">
+            <div class="card h-100 border-0">
+              <div class="card-body pt-6 pb-10 text-start">
+              <span class="px-3 py-2 bg-secondary text-white fw-medium"
+              style="border-radius: 0.5rem 0rem; ">政策三</span>
+              <h4 class="card-title mt-6 mb-3">推廣寵物飼養教育，讓愛更加專業</h4>
+              <ol class="ps-4">
+                <li>
+                  <p class="card-text">
+                    建立寵物飼養教育中心：每年撥款新台幣 3 億元，用於在全國各地建立專業的寵物飼養教育中心。預計在第一年內，在全國至少 5 大城市設立教育中心。
+                  </p>
+                </li>
+                <li>
+                  <p class="card-text">
+                    推廣寵物飼養課程：與學校、社區組織和寵物社團合作，推出一系列免費的寵物飼養課程。預計每年將有超過 10,000 名市民受益。
+                  </p>
+                </li>
+                <li>
+                  <p class="card-text">
+                    製作教育資料：出版寵物飼養手冊、影片和線上課程，讓所有有意飼養寵物的家庭都能輕鬆取得正確的知識
+                  </p>
+                </li>
+              </ol>
+            </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
   .banner-message {
     border-radius: 5rem 0rem;
     border: 5px solid var(--bs-primary);
@@ -121,6 +208,16 @@ import Polygon from '@/assets/images/polygon.svg';
   }
   .pt-100 {
     padding-top: 100px;
+  }
+
+  .card ol {
+    max-height: 220px;
+    overflow: hidden;
+    .card-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
   }
 
 </style>

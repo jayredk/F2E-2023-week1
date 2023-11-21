@@ -8,6 +8,9 @@ import Slogan from '@/assets/images/slogan.svg';
 import LatestCampaign from '@/assets/images/latest-campaign.svg';
 import Polygon from '@/assets/images/polygon.svg';
 import Issue from '@/assets/images/issue.svg';
+import Donate from '@/assets/images/donate.svg';
+import TotalDonate from '@/assets/images/total-donate.svg';
+import IconCoin from "@/assets/images/coin.svg";
 
 </script>
 
@@ -190,6 +193,33 @@ import Issue from '@/assets/images/issue.svg';
         </ul>
       </div>
     </section>
+
+    <section class="bg-donate py-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="donate p-7 bg-white">
+              <div class="text-center">
+                <Donate class="mb-5" />
+                <p class="mb-5 fs-4 fw-bolder">
+                  您的小筆捐款，是每隻毛孩未來的大大動力！
+                </p>
+                <TotalDonate />
+                <div class="donate-num mb-5 text-primary fw-bolder lh-sm">NT$987,655,873</div>
+                <button type="button" class="btn btn-primary d-flex align-items-center mx-auto px-8 py-5 rounded-pill fs-3 fw-bolder">
+                  <IconCoin
+                    class="me-2 fill-white"
+                    width="40"
+                    height="40"
+                  />
+                  前往捐款
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -218,6 +248,25 @@ import Issue from '@/assets/images/issue.svg';
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
     }
+  }
+
+  .bg-donate {
+    background-image: url(@/assets/images/donate-bg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .donate {
+    border-radius: 5rem;
+  }
+
+  .donate-num {
+    font-size: 3.75rem;
+  }
+
+  .fill-white {
+    fill: #FAFAFA;
   }
 
 </style>

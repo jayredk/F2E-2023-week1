@@ -88,7 +88,11 @@ const closeCanvas = () => offcanvas.value.hide();
               <a class="nav-link px-0" href="#">民眾服務信箱</a>
             </li>
             <li class="btn btn-primary d-flex align-items-center px-5 py-2 rounded-pill">
-              <IconCoin class="me-2 fill-white" />
+              <IconCoin
+                class="me-2 fill-white"
+                width="30"
+                height="30"
+              />
               <a class="fs-5 fw-bolder text-white text-decoration-none" href="#">小額捐款</a>
             </li>
           </ul>

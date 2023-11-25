@@ -11,6 +11,7 @@ import Issue from '@/assets/images/issue.svg';
 import Donate from '@/assets/images/donate.svg';
 import TotalDonate from '@/assets/images/total-donate.svg';
 import IconCoin from "@/assets/images/coin.svg";
+import Mail from "@/assets/images/mail.svg";
 
 </script>
 
@@ -216,6 +217,43 @@ import IconCoin from "@/assets/images/coin.svg";
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-8 pb-13">
+      <div class="row">
+        <div class="col-lg-5 offset-xl-1 text-center fs-4 fw-bolder">
+          <Mail class="mb-5" />
+          <p class="mb-2">您的聲音，我們的行動！</p>
+          <p>親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！</p>
+        </div>
+        <div class="col-lg-5 offset-xl-1">
+          <div class="my-5">
+            <input type="text"
+            class="form-control rounded-3"
+            placeholder="您的姓名">
+          </div>
+          <div class="mb-5">
+            <input type="email" class="form-control rounded-3"
+            placeholder="您的 Email">
+          </div>
+          <div class="mb-5">
+            <input type="email" class="form-control rounded-3"
+            placeholder="您的手機"
+            >
+          </div>
+          <div class="mb-5">
+            <textarea
+              class="form-control rounded-3"
+              placeholder="您的建言"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary px-8 py-5 rounded-pill fs-3 fw-bolder">
+              送出意見
+            </button>
           </div>
         </div>
       </div>

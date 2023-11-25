@@ -223,7 +223,7 @@ import Mail from "@/assets/images/mail.svg";
     </section>
 
     <section class="container mt-8 pb-13">
-      <div class="row">
+      <div class="row mb-10">
         <div class="col-lg-5 offset-xl-1 text-center fs-4 fw-bolder">
           <Mail class="mb-5" />
           <p class="mb-2">您的聲音，我們的行動！</p>
